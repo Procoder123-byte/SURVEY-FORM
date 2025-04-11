@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Feedback Form</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <div class="container">
+    <h2 class="fade-in">College Event Feedback</h2>
+    <form id="surveyForm" class="slide-in">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+
+      <label for="rating">Rating (1-5):</label>
+      <input type="number" id="rating" min="1" max="5" required />
+
+      <label for="feedback">Feedback:</label>
+      <textarea id="feedback" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+      <p id="message" class="fade-in"></p>
+    </form>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
